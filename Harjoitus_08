@@ -1,0 +1,54 @@
+/*	Jani Kähkönen/H9575
+Harjoitus_8	19.9.2014	*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double l1, l2, l3;
+	cin >> l1 >> l2 >> l3;
+
+	if (l1 < l2 && l1 < l3)
+	{
+		cout << l1 << endl;
+		if (l2 < l3)
+		{
+			cout << l2 << endl;
+			cout << l3 << endl;
+		}
+		else if (l3 < l2)
+		{
+			cout << l3 << endl;
+			cout << l2 << endl;
+		}
+	}
+	else  if (l2 < l1 && l2 < l3)
+	{
+		cout << l2 << endl;
+		if (l1 < l3)
+		{
+			cout << l1 << endl;
+			cout << l3 << endl;
+		}
+		else if (l3 < l1)
+		{
+			cout << l3 << endl;
+			cout << l1 << endl;
+		}
+	}
+	else  if (l3 < l1 && l3 < l2)
+	{
+		cout << l3 << endl;
+		if (l1 < l2)
+		{
+			cout << l1 << endl;
+			cout << l2 << endl;
+		}
+		else if (l2 < l1)
+		{
+			cout << l2 << endl;
+			cout << l1 << endl;
+		}
+	}
+}
